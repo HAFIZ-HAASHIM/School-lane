@@ -1,3 +1,4 @@
+
 # School Lane - Education Management System
 
 School Lane is a comprehensive education management system built with React, Vite, and Tailwind CSS. It provides a modern, responsive interface for managing various aspects of educational institutions, including student and teacher management, attendance tracking, assignments, exams, and announcements.
@@ -157,3 +158,6 @@ This project is licensed under the MIT License.
 ## Contact
 
 For any inquiries, please contact the project maintainer at [your-email@example.com].
+=======
+# School-lane
+
