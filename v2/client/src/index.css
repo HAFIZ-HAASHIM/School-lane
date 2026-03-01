@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-textPrimary antialiased font-sans m-0 p-0 overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-surface backdrop-blur-md border border-white/5 rounded-2xl relative overflow-hidden;
+    /* Composite shadow for glass effect */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-400 text-white font-medium py-2.5 px-5 rounded-lg transition-all duration-200 active:scale-95 flex items-center justify-center space-x-2;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
+  }
+
+  .btn-primary:hover {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
+  }
+
+  .input-field {
+    @apply w-full border border-slate-700 bg-surfaceSolid text-textPrimary rounded-lg px-4 py-2.5 focus:ring-1 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all placeholder:text-textSecondary;
+  }
+}
+
+/* Custom Scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d3748;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4a5568;
+}
